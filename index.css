@@ -1,0 +1,9 @@
+.box {
+  box-sizing: border-box;
+}
+body {
+  background: #22211d;
+}
+.center {
+  margin-top: 100px;
+}
