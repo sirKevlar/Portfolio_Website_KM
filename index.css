@@ -39,19 +39,33 @@ a:hover {
   display: block;
   height: 430px;
   width: 430px;
-  margin-top: 300px;
+  margin-top: 270px;
   margin-left: auto;
   margin-right: auto;
 }
 h2 {
-  display: block;
-  color: #be9d47;
-  font-weight: bolder;
+  display: inline-block;
+  color: #be9c477c;
+  font-size: 24px;
 }
-#animatedIntro {
+#introHighlit {
+  color: #be9c477c;
+}
+#intro {
+  color: rgba(255, 255, 255, 0.63);
+  font-size: 24px;
+}
+#intro a:hover {
+  background-image: none;
+}
+#animatedIntro,
+#animatedFooter {
   animation: type 5s;
   overflow: hidden;
   white-space: nowrap;
+}
+#animatedFooter {
+  bottom: 100px;
 }
 @keyframes type {
   0% {
