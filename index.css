@@ -19,23 +19,68 @@ nav {
   width: 100%;
   height: 60px;
   opacity: 0.6;
+  word-spacing: 25px;
   text-align: center;
 }
 nav li {
   display: inline-block;
   font-size: 18px;
-  text-align: center;
 }
 nav li a {
   color: white;
   text-decoration: none;
-  padding-right: 50px;
+  padding: 7px;
+}
+a:hover {
+  background-image: linear-gradient(to bottom right, #413a2a, #57613c);
+  border-radius: 8px;
 }
 #headshot {
   display: block;
   height: 430px;
   width: 430px;
-  margin-top: 200px;
+  margin-top: 300px;
   margin-left: auto;
   margin-right: auto;
+}
+h2 {
+  display: block;
+  color: #be9d47;
+  font-weight: bolder;
+}
+#animatedIntro {
+  animation: type 5s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 45ch;
+  }
+}
+footer {
+  list-style: none;
+  display: block;
+  position: fixed;
+  background: black;
+  bottom: 0;
+  left: 0;
+  min-width: 500px;
+  width: 100%;
+  height: 60px;
+  opacity: 0.6;
+  word-spacing: 25px;
+  text-align: center;
+}
+footer li {
+  display: inline-block;
+  font-size: 18px;
+}
+footer li a {
+  color: white;
+  text-decoration: none;
+  padding: 7px;
 }
