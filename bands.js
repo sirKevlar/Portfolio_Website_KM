@@ -4,13 +4,31 @@ let bandList = ["'Lazlo Baby'","'Robert John & Kev Morel'","'Forge On'","'The Ja
 "And several I can't remember"];
 let y = document.getElementById("animatedBands")
 
-function display(i){
-if(i >= bandList.length){
-i = 0;
+function display2(j){
+if(j >= bandList.length){
+j = 0;
 }
 
-y.innerHTML = bandList[i];
+y.innerHTML = bandList[j];
 setTimeout(function(){
-display(i + 1)
+display2(j + 1)
 }, 3000)
 }
+display2(0);
+
+let productionList = ["'The Liar' LP","'Peer Van See' EP","'Richard Lomax' EP",
+                    "'Edwin Putnam' EP","'Quincey May Brown' EP","'AllFM Christmas' EP",
+                    "'Flat Pack Gallows' LP","So many singles..."]
+let z = document.getElementById("animatedAlbums")
+
+function display3(k){
+if(k >= productionList.length){
+k = 0;
+}
+
+z.innerHTML = productionList[k];
+setTimeout(function(){
+display3(k + 1)
+}, 3000)
+}
+display3(0);
