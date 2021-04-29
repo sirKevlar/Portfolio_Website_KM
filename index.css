@@ -96,7 +96,7 @@ footer {
 }
 
 /*about page photos*/
-.center {
+center {
   display: block;
   width: 500px;
   margin-left: auto;
@@ -106,4 +106,44 @@ footer {
   font-style: italic;
   font-size: 14px;
   font-weight: lighter;
+}
+/*forms*/
+form {
+  display: block;
+  background: linear-gradient(
+    to bottom right,
+    rgba(66, 65, 54, 0.7),
+    rgba(102, 90, 52, 0.7)
+  );
+  height: 500px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+#formContents {
+  width: 60%;
+  margin: auto;
+  padding-top: 10px;
+}
+.formField:hover {
+  background: #57613c;
+}
+.formField {
+  width: 90%;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 3px;
+}
+.submission {
+  height: 50px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  padding-left: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

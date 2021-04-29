@@ -18,7 +18,24 @@
             <li><a href="about.html" id="aboutLink">ABOUT</a></li>
         </ul>
     </nav>
-    
+    <form>
+        <div id=formContents>
+            <h2>Fill it out and hit submit...</h2><br>
+  			<input class="formField" type="text" name="name" id="name" minlength="3" maxlength="33" placeholder="YOUR NAME" required pattern="[a-zA-Z]+">
+        <br><br>
+  			<input class="formField" type="text" name="email" id="email" minlength="10" maxlength="50" placeholder="YOUR EMAIL" required pattern="[a-zA-Z0-9]+">
+        <br><br>
+            <input class="formField" type="text" name="linkdin" id="linkdin" maxlength="50" placeholder="YOUR LINKDIN">
+        <br><br>
+            <input class="formField" type="text" name="github" id="github" maxlength="50" placeholder="YOUR GITHUB">
+        <br><br>
+            <textarea class="formField" name="jobDetails" placeholder="WHAT DO YOU NEED?"></textarea>
+            </section>
+                <section class="submission">
+                <input type="submit" value="SUBMIT">
+            </section>
+        </div>
+    </form>
 </body>
     <footer>
         <ul>
