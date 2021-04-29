@@ -10,12 +10,15 @@ body {
   padding: 5px;
 }
 nav {
+  top: 0;
+  left: 0;
+}
+nav,
+footer {
   list-style: none;
   display: block;
   position: fixed;
   background: black;
-  top: 0;
-  left: 0;
   min-width: 500px;
   width: 100%;
   height: 50px;
@@ -30,11 +33,13 @@ footer ul {
   display: inline-table;
   padding: 0 20px;
 }
-nav li {
+nav li,
+footer li {
   display: inline-block;
   font-size: 18px;
 }
-nav li a {
+nav li a,
+footer li a {
   color: white;
   text-decoration: none;
   padding: 8px;
@@ -56,7 +61,8 @@ h2 {
   color: #be9c477c;
   font-size: 24px;
 }
-#introHighlit {
+#introHighlit,
+#animatedBands {
   color: #be9c477c;
 }
 #intro {
@@ -84,29 +90,10 @@ h2 {
   }
 }
 footer {
-  list-style: none;
-  display: block;
-  position: fixed;
-  background: black;
   bottom: 0;
   left: 0;
-  min-width: 500px;
-  width: 100%;
-  height: 50px;
-  opacity: 0.7;
-  word-spacing: 25px;
-  text-align: center;
-  z-index: 10;
 }
-footer li {
-  display: inline-block;
-  font-size: 18px;
-}
-footer li a {
-  color: white;
-  text-decoration: none;
-  padding: 8px;
-}
+
 /*about page photos*/
 .center {
   display: block;
