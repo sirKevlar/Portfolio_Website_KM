@@ -25,7 +25,7 @@ footer {
   background: black;
   width: -webkit-fill-available;
   height: 7vh;
-  opacity: 0.7;
+  opacity: 0.8;
   align-items: center;
   min-width: 360px;
   justify-content: center;
@@ -44,6 +44,7 @@ nav li,
 footer li {
   display: flex;
   font-size: 1.2em;
+  letter-spacing: 0.05em;
 }
 nav li a,
 footer li a {
@@ -73,19 +74,24 @@ a:hover {
 .invisible {
   opacity: 0;
 }
+#clickMe {
+  font-size: 1.4em;
+  width: 340px;
+  text-align: left;
+}
 h2 {
   display: inline-block;
-  color: #be9c477c;
-  font-size: 1.2em;
+  color: #e9c8757c;
+  font-size: 1em;
 }
 #introHighlit,
 #animatedBands,
 #animatedAlbums {
-  color: #be9c477c;
+  color: #e9c8757c;
 }
 #intro {
   color: rgba(255, 255, 255, 0.63);
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 #intro a:hover {
   background-image: none;
@@ -98,14 +104,6 @@ h2 {
 }
 #animatedFooter {
   bottom: 100px;
-}
-@keyframes type {
-  0% {
-    width: 0ch;
-  }
-  100% {
-    width: 45ch;
-  }
 }
 footer {
   bottom: 0;

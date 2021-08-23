@@ -1,4 +1,4 @@
-let careerList = ["Classroom music teacher and tutor...         ","Record label director and in-house producer..",
+const careerList = ["Classroom music teacher and tutor...         ","Record label director and in-house producer..",
                     "Tour manager and touring musician...         ","Bar supervisor & chef in vegetarian cafe...  ",
                     "Painter and decorator for National Trust...  ","Window and conservatory fitter...            ",
                     "Specialist reinforced roofing fabricator...  ","Sales manager and field sales exec...        ",
