@@ -3,9 +3,10 @@
 }
 body {
   background: #22211d;
-  min-width: 500px;
+  min-width: 360px;
   max-width: 1000px;
-  font-family: "Roboto", sans-serif;
+  min-height: 570px;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   align-content: center;
   margin-left: auto;
@@ -19,50 +20,63 @@ nav {
 nav,
 footer {
   list-style: none;
-  display: block;
+  display: flex;
   position: fixed;
   background: black;
-  min-width: 500px;
-  width: 100%;
-  height: 50px;
+  width: -webkit-fill-available;
+  height: 7vh;
   opacity: 0.7;
-  text-align: center;
+  align-items: center;
+  min-width: 360px;
+  justify-content: center;
   z-index: 10;
 }
 nav ul,
 footer ul {
   list-style: none;
-  position: relative;
-  display: inline-table;
-  padding: 0 20px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: inherit;
+  justify-content: space-evenly;
 }
 nav li,
 footer li {
-  display: inline-block;
-  font-size: 18px;
+  display: flex;
+  font-size: 1.2em;
 }
 nav li a,
 footer li a {
   color: white;
   text-decoration: none;
-  padding: 8px;
+  padding: 8px 16px;
 }
 a:hover {
   background-image: linear-gradient(to bottom right, #413a2a, #57613c);
   border-radius: 3px;
 }
+.intro-page {
+  height: 84vh;
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 #headshot {
   display: block;
-  height: 430px;
-  width: 430px;
-  margin-top: 270px;
+  height: 360px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
+}
+.invisible {
+  opacity: 0;
 }
 h2 {
   display: inline-block;
   color: #be9c477c;
-  font-size: 24px;
+  font-size: 1.2em;
 }
 #introHighlit,
 #animatedBands,
@@ -71,7 +85,7 @@ h2 {
 }
 #intro {
   color: rgba(255, 255, 255, 0.63);
-  font-size: 24px;
+  font-size: 1.2em;
 }
 #intro a:hover {
   background-image: none;
@@ -109,7 +123,7 @@ footer {
 }
 .caption {
   font-style: italic;
-  font-size: 14px;
+  font-size: 0.8em;
   font-weight: lighter;
 }
 /*forms*/
