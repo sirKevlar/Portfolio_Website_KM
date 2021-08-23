@@ -85,12 +85,12 @@ const introAnimation = () => {
   let num = 0;
   console.log('working', aniText);
   function writeMe() {
-    if (num > 64) {
+    if (num > 78) {
       return aniText;
     } else {
       aniText.innerHTML = introTextArray[num];
       num++;
-      setTimeout(writeMe, 150);
+      setTimeout(writeMe, 120);
     }
   }
   writeMe(0);

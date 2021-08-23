@@ -96,12 +96,12 @@ h2 {
 #intro a:hover {
   background-image: none;
 }
-#animatedIntro,
+/* #animatedIntro,
 #animatedFooter {
   animation: type 5s;
   overflow: hidden;
   white-space: nowrap;
-}
+} */
 #animatedFooter {
   bottom: 100px;
 }
@@ -113,7 +113,7 @@ footer {
 /*about page photos*/
 .center {
   display: block;
-  min-width: 500px;
+  min-width: 360px;
   max-width: 1000px;
   width: 100%;
   margin-left: auto;
@@ -121,10 +121,16 @@ footer {
 }
 .caption {
   font-style: italic;
-  font-size: 0.8em;
+  font-size: 0.6em;
   font-weight: lighter;
 }
 /*forms*/
+.form-center {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 form {
   display: block;
   background: linear-gradient(
@@ -136,14 +142,12 @@ form {
   width: 500px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
   opacity: 0.7;
   border-radius: 5px;
 }
 #formContents {
   width: 60%;
   margin: auto;
-  padding-top: 10px;
 }
 .formField:hover {
   background: #57613c;
