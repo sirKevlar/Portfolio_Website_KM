@@ -126,7 +126,6 @@ footer {
 }
 /*projects*/
 .projects-section {
-  background-color: coral;
   margin-top: 6rem;
   margin-bottom: 6rem;
   display: flex;
@@ -137,7 +136,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: aquamarine;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -145,7 +143,6 @@ footer {
 .projects-li {
   height: 200px;
   width: 300px;
-  background-color: cadetblue;
   margin: 2rem 1rem;
   object-fit: cover;
   color: aliceblue;
