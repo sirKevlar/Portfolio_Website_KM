@@ -90,7 +90,7 @@ const introAnimation = () => {
     } else {
       aniText.innerHTML = introTextArray[num];
       num++;
-      setTimeout(writeMe, 120);
+      setTimeout(writeMe, 100);
     }
   }
   writeMe(0);
