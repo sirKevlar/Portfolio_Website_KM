@@ -205,6 +205,6 @@ form {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .captcha {
-  position: fixed;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
