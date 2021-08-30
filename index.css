@@ -204,3 +204,7 @@ form {
   padding-left: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.captcha {
+  position: fixed;
+  margin: auto;
+}
