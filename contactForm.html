@@ -20,7 +20,7 @@
     </nav>
     <div class="form-center">
 
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <div id=formContents>
                 <h2 class="invisible">Fill it out and hit submit...</h2><br>
                 <input class="formField" type="text" name="name" id="name" minlength="3" maxlength="33" placeholder="YOUR NAME">
@@ -34,6 +34,7 @@
                 <textarea class="formField" name="jobDetails" placeholder="WHAT DO YOU NEED?"></textarea>
             </section>
             <section class="submission">
+                <div data-netlify-recaptcha="true"></div>
                 <button type="submit">SUBMIT</button>
             </section>
         </div>
