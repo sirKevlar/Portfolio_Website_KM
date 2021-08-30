@@ -20,12 +20,12 @@
     </nav>
     <div class="form-center">
 
-        <form>
+        <form name="contact" method="POST" data-netlify="true">
             <div id=formContents>
-                <h2>Fill it out and hit submit...</h2><br>
-                <input class="formField" type="text" name="name" id="name" minlength="3" maxlength="33" placeholder="YOUR NAME" required pattern="[a-zA-Z]+">
+                <h2 class="invisible">Fill it out and hit submit...</h2><br>
+                <input class="formField" type="text" name="name" id="name" minlength="3" maxlength="33" placeholder="YOUR NAME">
                 <br><br>
-                <input class="formField" type="text" name="email" id="email" minlength="10" maxlength="50" placeholder="YOUR EMAIL" required pattern="[a-zA-Z0-9]+">
+                <input class="formField" type="email" name="email" id="email" minlength="10" maxlength="50" placeholder="YOUR EMAIL">
                 <br><br>
                 <input class="formField" type="text" name="linkdin" id="linkdin" maxlength="50" placeholder="YOUR LINKDIN">
                 <br><br>

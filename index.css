@@ -23,7 +23,7 @@ footer {
   display: flex;
   position: fixed;
   background: black;
-  width: -webkit-fill-available;
+  width: 100%;
   height: 7vh;
   opacity: 0.8;
   align-items: center;
@@ -173,7 +173,7 @@ form {
   margin: auto;
 }
 .formField:hover {
-  background: #57613c;
+  background: #d8d8a1;
 }
 .formField {
   width: 90%;
