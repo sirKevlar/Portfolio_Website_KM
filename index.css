@@ -52,9 +52,22 @@ footer li a {
   text-decoration: none;
   padding: 8px 16px;
 }
-a:hover {
+a:hover,
+button:hover {
   background-image: linear-gradient(to bottom right, #413a2a, #57613c);
   border-radius: 3px;
+}
+button:hover {
+  border-color: rgba(223, 223, 222, 0.8);
+  color: aliceblue;
+}
+button {
+  width: 90px;
+  height: 30px;
+  background-color: aliceblue;
+  border-style: groove;
+  border-color: rgba(223, 223, 222, 0);
+  border-radius: 0.2em;
 }
 .intro-page {
   height: 84vh;
