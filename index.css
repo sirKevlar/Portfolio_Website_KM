@@ -162,7 +162,7 @@ footer {
 }
 /*forms*/
 .form-center {
-  height: 100vh;
+  margin-top: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
