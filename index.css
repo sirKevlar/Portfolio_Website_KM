@@ -155,12 +155,12 @@ footer {
   padding: 0;
 }
 .projects-li {
-  width: 500px;
+  width: 450px;
   object-fit: cover;
 }
 .projects-lrg {
-  height: 640px;
-  width: 500px;
+  height: 660px;
+  width: 450px;
   object-fit: cover;
 }
 .projects-titles {
