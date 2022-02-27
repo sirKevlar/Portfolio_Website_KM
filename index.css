@@ -137,6 +137,14 @@ footer {
   font-size: 0.6em;
   font-weight: lighter;
 }
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-me {
+  max-width: 1000px;
+}
 /*projects*/
 .projects-section {
   margin-top: 6rem;
