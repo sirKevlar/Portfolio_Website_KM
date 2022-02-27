@@ -4,7 +4,7 @@
 body {
   background: #22211d;
   min-width: 360px;
-  max-width: 1000px;
+  max-width: 1300px;
   min-height: 570px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -147,19 +147,124 @@ footer {
 }
 .projects-ul {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
-.projects-li {
-  object-fit: cover;
+
+.projects-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* media query for two columns */
+@media only screen and (min-width: 850px) and (max-width: 1249px) {
+  .projects-ul {
+    display: grid;
+    height: fit-content;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'one two'
+      'one-title two-title'
+      'four five'
+      'four-title five-title'
+      'three seven'
+      'three-title seven-title'
+      'eight nine'
+      'eight-title nine-title'
+      'six six'
+      'six-title six-title';
+  }
+}
+/* media query for 3 columns */
+@media only screen and (min-width: 1250px) {
+  .projects-ul {
+    display: grid;
+    height: fit-content;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'one two three'
+      'one-title two-title three-title'
+      'four five six'
+      'four-title five-title six-title'
+      'seven eight nine'
+      'seven-title eight-title nine-title';
+    width: 100%;
+  }
+}
+#one {
+  grid-area: one;
+}
+#one-title {
+  grid-area: one-title;
+}
+#two {
+  grid-area: two;
+}
+#two-title {
+  grid-area: two-title;
+}
+#three {
+  grid-area: three;
+}
+#three-title {
+  grid-area: three-title;
+}
+#four {
+  grid-area: four;
+}
+#four-title {
+  grid-area: four-title;
+}
+#five {
+  grid-area: five;
+}
+#five-title {
+  grid-area: five-title;
+}
+#six {
+  grid-area: six;
+}
+#six-title {
+  grid-area: six-title;
+}
+#seven {
+  grid-area: seven;
+}
+#seven-title {
+  grid-area: seven-title;
+}
+#eight {
+  grid-area: eight;
+}
+#eight-title {
+  grid-area: eight-title;
+}
+#nine {
+  grid-area: nine;
+}
+#nine-title {
+  grid-area: nine-title;
 }
 .projects-lrg {
   height: 600px;
   width: 350px;
   object-fit: cover;
+  margin-bottom: 10px;
 }
+
 .projects-titles {
   color: aliceblue;
   font-size: 0.9em;
