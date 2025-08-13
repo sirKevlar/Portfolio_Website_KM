@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="flex" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,46 +9,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     
-    <script src="./index.js" defer></script>
+    <script src="./careers.js" defer></script>
     <script src="./animatedText.js" defer></script>
 </head>
-<body>
+<body class="flex-col">
     <nav>
-        <ul>
+        <ul class="flex" id="nav-links">
             <li><a href="index.html" id="homeLink">HOME</a></li>
             <li><a href="projects.html" id="projectsLink">PROJECTS</a></li>
             <li><a href="about.html" id="aboutLink">ABOUT</a></li>
         </ul>
     </nav>
-    <div class="intro-page">
-        <h2 class="invisible">Invisible text to make flexbox behave nicely</h2>
-        <div class="headshot">
+    <main class="intro-page">
+        <section class="flex-col" id="landing-screen">
             <img src="assets/headCircleNature2.png" alt="Headshot of Kev Morel" id="headshot"> 
-        </div>
-            <h2 id="clickMe">Test</h2>
-        </div>
-        <br><br><br><br><br>
-        <div id="intro">
-        I'm Kev, that's me in the picture above (nice hair pic eh)? I am a <a id="introHighlit">Software Engineer & Seminar Lead for Northcoders</a> specializing in <a id="introHighlit">JavaScript, CSS & HTML</a>. I have used <a id="introHighlit">React, Svelte, PostgreSQL, MongoDB, Prisma, tRPC, TypeScript, Jest, Supertest, React Testing Library & Tailwind CSS</a> (plus more) and I live <a id="introHighlit">near Manchester</a>. 
-        I have been involved in many Northcoders development projects, both internal and external, and have <a id="introHighlit">produced numerous websites</a> for musicians, bands and music related organisations.
-        <br><br>In the <a id="introHighlit">last 15 years</a> I have also: <a id="introHighlit">Released an album</a>, <a id="introHighlit">produced albums</a> for many artists, <a id="introHighlit">set up a record label</a> (which susequently failed),
-        arranged, managed and performed on <a id="introHighlit">four European tours</a>, tutored <a id="introHighlit">hundreds of music students</a> (drums, percussion, guitar, ukulele, recorder, singing),
-        set up a successful <a id="introHighlit">business outsourcing music tutoring</a> in primary schools (successful PRE COVID19, that is), <a id="introHighlit">I retrained as a software developer and got a job working for the UK's #1 software development bootcamp, Northcoders</a>, and most importantly
-        I became <a id="introHighlit">father to two amazing girls: Isla and Alys</a>.<br><br>
-        As with most ex-music industry professionals, I had a number of 'day jobs', these include: <br>
-        <h2 id="animatedFooter">Wedding singer extraordinaire...             </h2><br><br>
-        Nearly <a id="introHighlit">10 years</a> working with <a id="introHighlit">unbelievably talented children</a> and <a id="introHighlit">dedicated staff</a> in primary and high schools <a id="introHighlit">all around NW England</a>; 
-        taught me how to <a id="introHighlit">communicate and teach</a> on a multitude of levels.<br><br>
-        These days music is my hobby and my other passions: <a id="introHighlit">JS and design</a> drive my career forward. I am lucky enough to have continued to work in education, but this time with adults, teaching software development remotely. <a id="introHighlit">Hit contact</a> or check me out on <a href="https://github.com/sirKevlar" target="_blank" id="introHighlit">Github</a> or <a href="https://www.linkedin.com/in/kev-morel-392934b6/" target="_blank" id="introHighlit">Linkdin</a>. See you there :)
-        <br><br><br><br>
-        </div>
-    </p>
-</body>
+            <h2 id="welcome-message">Placeholder</h2>
+        </section>
+        <section id="intro">
+            <p>
+                I'm Kev, that's me in the picture above. I live near Manchester and was a <span class="intro-highlit">Software Engineer & Seminar Lead for Northcoders</span> specializing in <span class="intro-highlit">React, JavaScript, Typescript, CSS & HTML</span>. I helped develop and maintain many of Northcoders' internal and external platforms using <span class="intro-highlit">Storybook, Figma, Tailwind CSS, PostgreSQL, Prisma, tRPC, Jest, Supertest & React Testing Library.</span> 
+                I have been involved in many Northcoders development projects, both internal and external, and have <span class="intro-highlit">produced numerous websites</span> for musicians, bands and music related organisations.
+            </p>
+            <p>
+                In the last 15 years I have also: <span class="intro-highlit">Released an album</span>, produced albums for many artists, <span class="intro-highlit">set up a record label</span> 
+                arranged, managed and performed on <span class="intro-highlit">four European tours</span>, tutored <span class="intro-highlit">hundreds of music students</span> (drums, percussion, guitar, ukulele, recorder, singing),
+                set up a successful <span class="intro-highlit">business outsourcing music tutoring</span> in primary schools (successful PRE COVID19, that is), <span class="intro-highlit">I retrained as a software developer and got a job working for the UK's #1 software development bootcamp, Northcoders</span>, and most importantly
+                I became <span class="intro-highlit">father to two amazing girls: Isla and Alys</span>.
+            </p>
+            <p>
+                As is the case with many music industry professionals, I also had a number of 'day jobs', these include: 
+            </p>
+            <h2 id="animated-footer">Wedding singer extraordinaire...</h2>
+            <p>
+                Nearly <span class="intro-highlit">10 years</span> working with <span class="intro-highlit">unbelievably talented children</span> and <span class="intro-highlit">dedicated staff</span> in primary and high schools <span class="intro-highlit">all around NW England</span>; 
+                taught me how to <span class="intro-highlit">communicate and teach</span> on a multitude of levels.</p>
+            <p>
+                These days music is my hobby and my other passions: <span class="intro-highlit">JS and design</span> drive my career forward. I am lucky enough to have continued to work in education, but this time with adults, teaching software development remotely. Check the links below if you want to get in contact.
+            </p>
+        </section>
+    
+    </main>
     <footer>
-        <ul>
+        <ul class="flex" id="footer-links">
             <li><a href="https://github.com/sirKevlar" target="_blank" id="githubLink">GITHUB</a></li>
             <li><a href="contactForm.html" id="contactLink">CONTACT</a></li>
             <li><a href="https://www.linkedin.com/in/kev-morel-392934b6/" target="_blank" id="linkdinLink">LINKDIN</a></li>
         </ul>
     </footer>
+</body>
 </html>
