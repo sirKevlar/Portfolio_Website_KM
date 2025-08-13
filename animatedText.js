@@ -1,10 +1,10 @@
 const introTextArray = [
-  'Hey there! Scroll down for more_',
-  'Hey there! Scroll down for more ',
+  'HEY THERE! SCROLL DOWN FOR MORE_',
+  'HEY THERE! SCROLL DOWN FOR MORE ',
 ];
 
 const introAnimation = () => {
-  let aniText = document.getElementById('clickMe');
+  let aniText = document.getElementById('welcome-message');
   let counter = 0;
   let numSwitch = 0;
   function writeMe() {
