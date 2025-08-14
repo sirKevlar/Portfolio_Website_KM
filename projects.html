@@ -1,67 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="flex" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kev Morel Portfolio Website Projects</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/png" href="/favicon.png"/>
-    <script src="./index.js" defer></script>
+    <link rel="icon" type="image/png" href="favicon.png"/>
 </head>
-<body>
+<body class="flex-col">
     <nav>
         <ul class="flex" id="nav-links">
-            <li><a href="index.html" id="homeLink">HOME</a></li>
-            <li><a href="projects.html" id="projectsLink">PROJECTS</a></li>
-            <li><a href="about.html" id="aboutLink">ABOUT</a></li>
+            <li class=nav-link><a href="index.html" id="homeLink">HOME</a></li>
+            <li class=nav-link><a href="projects.html" id="projectsLink">PROJECTS</a></li>
+            <li class=nav-link><a href="about.html" id="aboutLink">ABOUT</a></li>
         </ul>
     </nav>
-    <section class="projects-section">
-        <section class="nc-projects">
-            <img class="nc-projects-slide" src='/assets/kevDevAgile800.png' alt="">
-            <img class="nc-projects-slide" src='/assets/kevDevL2C800.png' alt="">
-            <img class="nc-projects-slide" src='/assets/kevDevRCL800.png' alt="">
-            <img class="nc-projects-slide" src='/assets/kevDevLMS800.png' alt="">
-            <img class="nc-projects-slide" src='/assets/kevDevCertGen800.png' alt="">
-            <img class="nc-projects-slide" src='/assets/kevDevPairGen800.png' alt="">
+    <section class="projects flex-col">
+        <section class="nc-projects flex-col">
+            <h2 class="subtitle" id="nc-projects-title">NORTHCODERS PROJECTS</h2>
+            <img class="nc-projects-slide" src='assets/kevDevAgile800.png' alt="">
+            <img class="nc-projects-slide" src='assets/kevDevL2C800.png' alt="">
+            <img class="nc-projects-slide" src='assets/kevDevRCL800.png' alt="">
+            <img class="nc-projects-slide" src='assets/kevDevLMS800.png' alt="">
+            <img class="nc-projects-slide" src='assets/kevDevCertGen800.png' alt="">
+            <img class="nc-projects-slide" src='assets/kevDevPairGen800.png' alt="">
         </section>
-        <h2 id="personal-projects-title">Personal Projects</h2>
-        <section class="personal-projects">
-            <figure>
-                <iframe src="https://www.youtube.com/embed/1lGdSrrptkI" frameborder="0"></iframe>
-                <figcaption>Graduation Project (Svelte/MongoDB)</figcaption>
+        <section class="flex-col personal-projects">
+            <h2 class="subtitle" id="personal-projects-title">PERSONAL PROJECTS</h2>
+            <figure class="flex-col">
+                <iframe src="https://www.youtube.com/embed/1lGdSrrptkI" frameborder="0" class="personal-projects-item"></iframe>
+                <figcaption class="projects-caption">Graduation Project (Svelte/MongoDB)</figcaption>
             </figure>
-            <figure>
-                <iframe src="https://www.youtube.com/embed/ExtnyNz743k" frameborder="0"></iframe>
-                <figcaption>Lightning Talk (WebAudio API demo)</figcaption>
+            <figure class="flex-col">
+                <iframe src="https://www.youtube.com/embed/ExtnyNz743k" frameborder="0" class="personal-projects-item"></iframe>
+                <figcaption class="projects-caption">Lightning Talk (WebAudio API demo)</figcaption>
             </figure>
-            <figure>
-                <video width="300px" controls src="assets/cookerooDemo.mp4"></video>
-                <figcaption>Cookeroo Demo (Svelte/MongoDB)</figcaption>
+            <figure class="flex-col">
+                <video width="300px" controls src="assets/cookerooDemo.mp4" class="personal-projects-item"></video>
+                <figcaption class="projects-caption">Cookeroo Demo (Svelte/MongoDB)</figcaption>
             </figure>
-            <figure>
-                <a href="http://www.kevin-morel.squarespace.com/"><img src="assets/kevMorelWeb.png" alt="Homepage for Kev Morel dot com screenshot" class="fpg"></a>
-                <figcaption>Link: Website Made With Squarespace</figcaption>
+            <figure class="flex-col">
+                <a class="personal-projects-a flex-col" href="http://www.kevin-morel.squarespace.com/"><img src="assets/kevMorelWeb.png" alt="Homepage for Kev Morel dot com screenshot" class="personal-projects-item"></a>
+                <figcaption class="projects-caption">Link: Website Made With Squarespace</figcaption>
             </figure>
-            <figure>
-                <a href="https://kevmoreldfr.bandcamp.com/album/flat-pack-gallows"><img src="assets/fpgLogo.png" alt="Kev Morel Flat Pack Gallows Logo" class="fpg"></a>
-                <figcaption>Link: Album 'Flat Pack Gallows'</figcaption>
+            <figure class="flex-col">
+                <a class="personal-projects-a flex-col" href="https://kevmoreldfr.bandcamp.com/album/flat-pack-gallows"><img class="personal-projects-item" src="assets/fpgLogo.png" alt="Kev Morel Flat Pack Gallows Logo"></a>
+                <figcaption class="projects-caption">Link: Album 'Flat Pack Gallows'</figcaption>
             </figure>
-            <figure>
-                <a href="https://dev.to/sirkevlar/coda-2-coder-dev-journey-4kn"><img src="assets/coda2coder.jpg" alt="Green flying code" class="fpg"></a>
-                <figcaption>Link: 'Coda 2 Coder' (My Blog)</figcaption>
+            <figure class="flex-col">
+                <a class="personal-projects-a flex-col" href="https://dev.to/sirkevlar/coda-2-coder-dev-journey-4kn"><img src="assets/coda2coder.jpg" alt="Green flying code" class="personal-projects-item"></a>
+                <figcaption class="projects-caption">Link: 'Coda 2 Coder' (My Blog)</figcaption>
             </figure>
         </section>
     </section>
 </body>
     <footer>
         <ul class="flex" id="footer-links">
-            <li><a href="https://github.com/sirKevlar" target="_blank" id="githubLink">GITHUB</a></li>
-            <li><a href="contactForm.html" id="contactLink">CONTACT</a></li>
-            <li><a href="https://www.linkedin.com/in/kev-morel-392934b6/" target="_blank" id="linkdinLink">LINKDIN</a></li>
+            <li class=foot-link><a href="https://github.com/sirKevlar" target="_blank" id="githubLink">GITHUB</a></li>
+            <li class=foot-link><a href="contactForm.html" id="contactLink">CONTACT</a></li>
+            <li class=foot-link><a href="https://www.linkedin.com/in/kev-morel-392934b6/" target="_blank" id="linkdinLink">LINKDIN</a></li>
         </ul>
     </footer>
 </html>
