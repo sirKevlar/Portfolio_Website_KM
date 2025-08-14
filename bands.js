@@ -10,7 +10,7 @@ let bandList = [
   "'Clarke Van Gelder'",
   "'TurboBoost' - Guest",
   "'Peer Van See' - Guest",
-  "And several I can't remember",
+  "And several more...",
 ];
 let y = document.getElementById('animatedBands');
 
