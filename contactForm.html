@@ -1,52 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="flex">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kev Morel Portfolio Website ContactMe</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/png" href="/favicon.png"/>
-    <script src="./index.js" defer></script>
+    <link rel="icon" type="image/png" href="favicon.png"/>
 </head>
-<body>
+<body class="flex-col">
     <nav>
-        <ul>
-            <li><a href="index.html" id="homeLink">HOME</a></li>
-            <li><a href="projects.html" id="projectsLink">PROJECTS</a></li>
-            <li><a href="about.html" id="aboutLink">ABOUT</a></li>
+        <ul class="flex" id="nav-links">
+            <li class=nav-link><a href="index.html" id="homeLink">HOME</a></li>
+            <li class=nav-link><a href="projects.html" id="projectsLink">PROJECTS</a></li>
+            <li class=nav-link><a href="about.html" id="aboutLink">ABOUT</a></li>
         </ul>
     </nav>
-    <div class="form-center">
-
+    <main class="flex-col form-main">
         <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-            <div id=formContents>
-                <h2 class="invisible">Fill it out and hit submit...</h2><br>
-                <input class="formField" type="text" name="name" id="name" minlength="3" maxlength="33" placeholder="YOUR NAME">
-                <br><br>
-                <input class="formField" type="email" name="email" id="email" minlength="10" maxlength="50" placeholder="YOUR EMAIL">
-                <br><br>
-                <input class="formField" type="text" name="linkdin" id="linkdin" maxlength="50" placeholder="YOUR LINKDIN">
-                <br><br>
-                <input class="formField" type="text" name="github" id="github" maxlength="50" placeholder="YOUR GITHUB">
-                <br><br>
-                <textarea class="formField" name="jobDetails" placeholder="WHAT DO YOU NEED?"></textarea>
+            <section class="flex-col" id=form-contents>
+                <h2 class="invisible">Fill it out and hit submit...</h2>
+                <input class="form-field" type="text" name="name" id="name" minlength="3" maxlength="33" placeholder="YOUR NAME">
+                <input class="form-field" type="email" name="email" id="email" minlength="10" maxlength="50" placeholder="YOUR EMAIL">
+                <input class="form-field" type="text" name="linkdin" id="linkdin" maxlength="50" placeholder="YOUR LINKDIN">
+                <input class="form-field" type="text" name="github" id="github" maxlength="50" placeholder="YOUR GITHUB">
+                <textarea class="form-field" name="jobDetails" placeholder="WHAT DO YOU NEED?"></textarea>
             </section>
-            <section class="submission">
-                <button type="submit">SUBMIT</button>
+            <section class="submission flex-col">
+                <button id="submit-btn" type="submit">SUBMIT</button>
             </section>
-            <div class="captcha" data-netlify-recaptcha="true"></div>
-        </div>
-    </form>
-</div>
+            <section class="recaptcha">
+                <div data-netlify-recaptcha="true"></div>
+            </section>
+            <p class="form-note">By submitting this form you agree to the storage and handling of your data by this website. Your data will not be shared with any third parties.</p>
+        
+        </form>
+    </main>
 </body>
     <footer>
-        <ul>
-            <li><a href="https://github.com/sirKevlar" target="_blank" id="githubLink">GITHUB</a></li>
-            <li><a href="contactForm.html" id="contactLink">CONTACT</a></li>
-            <li><a href="https://www.linkedin.com/in/kev-morel-392934b6/" target="_blank" id="linkdinLink">LINKDIN</a></li>
+        <ul class="flex" id="footer-links">
+            <li class=foot-link><a href="https://github.com/sirKevlar" target="_blank" id="githubLink">GITHUB</a></li>
+            <li class=foot-link><a href="contactForm.html" id="contactLink">CONTACT</a></li>
+            <li class=foot-link><a href="https://www.linkedin.com/in/kev-morel-392934b6/" target="_blank" id="linkdinLink">LINKDIN</a></li>
         </ul>
     </footer>
 </html>
