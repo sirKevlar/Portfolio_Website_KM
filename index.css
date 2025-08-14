@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Echo Horizon';
+  src: local('Echo Horizon'), url('./fonts/EchoHorizon.ttf') format('truetype');
+}
+
 html {
   justify-content: center;
 }
@@ -7,7 +12,7 @@ body {
   background: #22211d;
   color: #d2cccc;
   min-width: 350px;
-  max-width: 1200px;
+  max-width: 1000px;
   min-height: 570px;
   font-family: 'Echo Horizon', sans-serif;
   font-size: 1.2em;
@@ -18,7 +23,7 @@ body {
 }
 main {
   width: 90%;
-  padding-bottom: 120px;
+  padding-bottom: 200px;
 }
 
 ul {
@@ -32,7 +37,7 @@ ul {
 }
 
 a {
-  color: rgb(50, 50, 241)
+  color: rgb(50, 50, 241);
 }
 
 a:visited {
@@ -40,11 +45,7 @@ a:visited {
 }
 
 a:hover {
-  color: rgb(88, 88, 201)
-}
-
-.flex {
-  display: flex;
+  color: rgb(88, 88, 201);
 }
 
 h2 {
@@ -55,9 +56,10 @@ h2 {
 
 nav, footer {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   height: 120px;
   position: fixed;
+  z-index: 100;
 }
 
 nav {
@@ -69,13 +71,121 @@ footer {
   background-image: linear-gradient(#22211d00, #22211d7a, #22211dd0, #22211d, #22211d);
 }
 
+img {
+  border-radius: 3px;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: rgb(128, 92, 162);
+}
+
+iframe {
+  height: 60vw;
+  max-height: 450px
+}
+
+.nav-link, .foot-link {
+  transition: transform 0.15s ease-in-out;
+}
+
+.nav-link:hover, .foot-link:hover {
+  transform: scale(1.2);
+}
+
+.flex {
+  display: flex;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
-.intro-highlit  {
+
+.self-left {
+  align-self: flex-start;
+}
+
+.text-highlight  {
   color: rgb(179, 140, 216);
+}
+
+.subtitle {
+  font-size: 2em;
+  padding-top: 5vw;
+}
+
+.about-page {
+  padding-top: 100px;
+}
+
+.about-gallery {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.projects, .nc-projects, .personal-projects {
+  gap: 60px;
+}
+
+.projects {
+  padding: 120px 0;
+}
+
+.nc-projects-slide, .personal-projects-item {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 15% 5% 10% 7%;
+  box-shadow: 0 0 15px 0 rgba(171, 63, 248, 0.309);
+  transition: transform 0.25s ease-in-out;
+  opacity: 0.6;
+}
+
+.nc-projects-slide:hover, .personal-projects-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px 0 rgba(171, 63, 248, 0.661);
+  opacity: 1;
+}
+
+.personal-projects-a {
+  width: 100%;
+}
+
+.form-main {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+.form-field, #submit-btn {
+  width: 70%;
+  opacity: 0.7;
+  font-family: 'Echo Horizon', sans-serif;
+  font-size: 1.4em;
+}
+
+#submit-btn {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(128, 92, 162);
+  transition: transform 0.25s ease-in-out;
+  border: none;
+  border-radius: 3px;
+}
+
+#submit-btn:hover {
+  transform: scale(1.05);
+  opacity: 1;
+  background-color: rgb(88, 88, 201);
 }
 
 #landing-screen {
@@ -100,6 +210,22 @@ footer {
 #footer-links {
   position: fixed;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   bottom: 0;
+}
+
+#form-contents, .form-note {
+  width: 40vw;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+#form-contents {
+  padding: 5vw 2vw;
+  border: 2px solid rgb(166, 159, 172);
+  border-radius: 3px;
+}
+
+.form-note {
+  padding: 1vw 2vw;
 }
