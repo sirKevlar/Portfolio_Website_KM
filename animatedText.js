@@ -1,6 +1,6 @@
 const introTextArray = [
   'HEY THERE! SCROLL DOWN FOR MORE_',
-  'HEY THERE! SCROLL DOWN FOR MORE ',
+  '⬇   ⬇   ⬇   ⬇   ⬇   ⬇   ⬇',
 ];
 
 const introAnimation = () => {
@@ -18,7 +18,7 @@ const introAnimation = () => {
         numSwitch === 0 ? numSwitch = 1 : numSwitch = 0;
       }
     }
-    const timeDelay = counter < 32 ? 80 : 400;
+    const timeDelay = counter < 32 ? 80 : 1000;
     counter++;
     setTimeout(writeMe, timeDelay);
   }
