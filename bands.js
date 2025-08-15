@@ -1,6 +1,5 @@
 let bandList = [
   "'Lazlo Baby'",
-  "'Robert John & Kev Morel'",
   "'Forge On'",
   "'The Jannocks'",
   "'The Consolations'",
@@ -10,9 +9,9 @@ let bandList = [
   "'Clarke Van Gelder'",
   "'TurboBoost' - Guest",
   "'Peer Van See' - Guest",
-  "And several more...",
+  'And several more...',
 ];
-let y = document.getElementById('animatedBands');
+let y = document.getElementById('animated-bands');
 
 function display2(j) {
   if (j >= bandList.length) {
@@ -36,7 +35,7 @@ let productionList = [
   "'Flat Pack Gallows' LP",
   'So many singles...',
 ];
-let z = document.getElementById('animatedAlbums');
+let z = document.getElementById('animated-albums');
 
 function display3(k) {
   if (k >= productionList.length) {
