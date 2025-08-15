@@ -75,20 +75,20 @@ img {
   border-radius: 3px;
 }
 
-figure {
+figure, iframe, video, .nc-projects {
   padding: 0;
   margin: 0;
   width: 100%;
 }
 
 figcaption {
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
   color: rgb(128, 92, 162);
 }
 
 iframe {
-  height: 60vw;
-  max-height: 450px
+  height: 50vw;
+  max-height: 350px
 }
 
 .nav-link, .foot-link {
@@ -136,10 +136,6 @@ iframe {
   gap: 60px;
 }
 
-.projects {
-  padding: 120px 0;
-}
-
 .nc-projects-slide, .personal-projects-item {
   width: 90%;
   max-width: 800px;
@@ -155,7 +151,7 @@ iframe {
   opacity: 1;
 }
 
-.personal-projects-a {
+.personal-projects, .personal-projects-a, iframe, video {
   width: 100%;
 }
 
