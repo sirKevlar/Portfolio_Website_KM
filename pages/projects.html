@@ -7,6 +7,7 @@
     <title>Kev Morel Portfolio Website Projects</title>
     <link rel="stylesheet" href="../index.css">
     <link rel="icon" type="image/png" href="../assets/favicon.png"/>
+    <script src="../utils/scrollAnimationTrigger.js" defer></script>
 </head>
 <body class="flex-col">
     <nav>
@@ -16,41 +17,54 @@
             <li class=nav-link><a href="about.html" id="aboutLink">ABOUT</a></li>
         </ul>
     </nav>
-    <main class="projects flex-col">
+    <main class="projects-page flex-col">
         <section class="nc-projects flex-col">
             <h2 class="subtitle" id="nc-projects-title">NORTHCODERS PROJECTS</h2>
-            <img class="nc-projects-slide" src='../assets/kevDevAgile800.png' alt="">
-            <img class="nc-projects-slide" src='../assets/kevDevL2C800.png' alt="">
-            <img class="nc-projects-slide" src='../assets/kevDevRCL800.png' alt="">
-            <img class="nc-projects-slide" src='../assets/kevDevLMS800.png' alt="">
-            <img class="nc-projects-slide" src='../assets/kevDevCertGen800.png' alt="">
-            <img class="nc-projects-slide" src='../assets/kevDevPairGen800.png' alt="">
+            <article class="animate nc-projects-item flex-col">
+                <h3 class="nc-projects-header">AGILE PRACTICES</h3>
+                <p class="nc-projects-text">Working in the Northcoders internal development department is similar to many other dev teams who engage in agile development practices and included: Regular stand-ups with kanban, a ticket and git based development management cycle and participation in other SCRUM ceremonies such as planning and retros.</p>
+                <h4 class="nc-projects-footer">Dev work at Northcoders</h4>
+            </article>
+            <article class="animate nc-projects-item flex-col">
+                <h3 class="nc-projects-header">COMPONENT LIBRARY</h3>
+                <p class="nc-projects-text">Working within the atomic design paradigm, the Northcoders React Component Library is a large library of components created within Storybook using Tailwind and tested using React Testing Library. I was responsible for creating a number of the animations as well as several buttons, form inputs and other form related components.</p>
+                <h4 class="nc-projects-footer">Dev work at Northcoders</h4>
+            </article>
+            <article class="animate nc-projects-item flex-col">
+                <h3 class="nc-projects-header">LEARNER MANAGEMENT</h3>
+                <p class="nc-projects-text">The Learner Management System is the biggest and boldest internal development project I was part of at Northcoders. It aims to manage the complete student journey from first interest through to graduation and beyond. Using Prisma and tRPC, I updated the table structure through Prisma migrations, all rigorously tested.</p>
+                <h4 class="nc-projects-footer">Dev work at Northcoders</h4>
+            </article>
+            <article class="animate nc-projects-item flex-col">
+                <h3 class="nc-projects-header">LEARN 2 CODE</h3>
+                <p class="nc-projects-text">Northcoders' flagship customer facing software application, the Learn 2 Code platform. Designed from the floor up to be a landing spot for students to learn about coding and test their knowledge. I was involved in designing and writing the test suite behind many of the student interactive challenges.</p>
+                <h4 class="nc-projects-footer">Dev work at Northcoders</h4>
+            </article>
+            <article class="animate nc-projects-item flex-col">
+                <h3 class="nc-projects-header">CERTIFICATE GENERATOR</h3>
+                <p class="nc-projects-text">A single command in Slack will hook into Northcoders' Learner Management System and procedurally generate graduation certificates, with social links and email to all valid graduates. I was involved with this project during it's genesis and spiked out much of the tech which eventually made it into the stack.</p>
+                <h4 class="nc-projects-footer">Dev work at Northcoders</h4>
+            </article>
+            <article class="animate nc-projects-item flex-col">
+                <h3 class="nc-projects-header">PAIRING GENERATOR</h3>
+                <p class="nc-projects-text">A key part of the Northcoders course is collaborative work. This means the students and tutors engage in paired programming the majority of the time. A pairing generator was my firs development project at Northcoders. I saw the project from spiking through to the release of the first and second versions.</p>
+                <h4 class="nc-projects-footer">Dev work at Northcoders</h4>
+            </article>
+            
         </section>
         <section class="personal-projects flex-col">
             <h2 class="subtitle" id="personal-projects-title">PERSONAL PROJECTS</h2>
             <figure class="flex-col">
-                <iframe src="https://www.youtube.com/embed/1lGdSrrptkI" frameborder="0" class="personal-projects-item"></iframe>
+                <iframe src="https://www.youtube.com/embed/1lGdSrrptkI" frameborder="0" class="animate personal-projects-item"></iframe>
                 <figcaption class="projects-caption">Graduation Project (Svelte/MongoDB)</figcaption>
             </figure>
             <figure class="flex-col">
-                <iframe src="https://www.youtube.com/embed/ExtnyNz743k" frameborder="0" class="personal-projects-item"></iframe>
+                <iframe src="https://www.youtube.com/embed/ExtnyNz743k" frameborder="0" class="animate personal-projects-item"></iframe>
                 <figcaption class="projects-caption">Lightning Talk (WebAudio API demo)</figcaption>
             </figure>
             <figure class="flex-col">
-                <video width="300px" controls src="assets/cookerooDemo.mp4" class="personal-projects-item"></video>
+                <video width="300px" controls src="assets/cookerooDemo.mp4" class="animate personal-projects-item"></video>
                 <figcaption class="projects-caption">Cookeroo Demo (Svelte/MongoDB)</figcaption>
-            </figure>
-            <figure class="flex-col">
-                <a class="personal-projects-a flex-col" href="http://www.kevin-morel.squarespace.com/"><img src="assets/kevMorelWeb.png" alt="Homepage for Kev Morel dot com screenshot" class="personal-projects-item"></a>
-                <figcaption class="projects-caption">Link: Website Made With Squarespace</figcaption>
-            </figure>
-            <figure class="flex-col">
-                <a class="personal-projects-a flex-col" href="https://kevmoreldfr.bandcamp.com/album/flat-pack-gallows"><img class="personal-projects-item" src="assets/fpgLogo.png" alt="Kev Morel Flat Pack Gallows Logo"></a>
-                <figcaption class="projects-caption">Link: Album 'Flat Pack Gallows'</figcaption>
-            </figure>
-            <figure class="flex-col">
-                <a class="personal-projects-a flex-col" href="https://dev.to/sirkevlar/coda-2-coder-dev-journey-4kn"><img src="assets/coda2coder.jpg" alt="Green flying code" class="personal-projects-item"></a>
-                <figcaption class="projects-caption">Link: 'Coda 2 Coder' (My Blog)</figcaption>
             </figure>
         </section>
     </main>
