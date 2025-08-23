@@ -2,6 +2,10 @@
   font-family: 'Echo Horizon';
   src: local('Echo Horizon'), url('./fonts/EchoHorizon.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'CS Morcant';
+  src: local('CS Morcant'), url('./fonts/csmorcantmonodrawnregulardemo-7o7ml.otf') format('truetype');
+}
 
 html {
   justify-content: center;
@@ -37,27 +41,38 @@ ul {
 }
 
 a {
-  color: rgb(50, 50, 241);
+  color: rgb(74, 74, 234);
 }
 
 a:visited {
-  color: rgb(128, 92, 162);
+  color: rgb(181, 138, 222);
 }
 
 a:hover {
   color: rgb(88, 88, 201);
 }
 
+h2, h3, h4 {
+  margin: 0;
+  color: rgb(181, 138, 222);
+}
+
 h2 {
   font-size: clamp(21px, 4vw, 2.2rem);
-  margin: 0;
-  color: rgb(128, 92, 162);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h4 {
+  font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
 nav, footer {
   width: 100%;
   max-width: 1000px;
-  height: clamp(120px, 20vw, 200px);
+  height: clamp(120px, 20vw, 180px);
   position: fixed;
   z-index: 100;
 }
@@ -83,7 +98,7 @@ figure, iframe, video, .nc-projects {
 
 figcaption {
   font-size: clamp(0.8rem, 2vw, 1.2rem);
-  color: rgb(128, 92, 162);
+  color: rgb(181, 138, 222);
 }
 
 iframe {
@@ -123,32 +138,80 @@ iframe {
   padding-top: 5vw;
 }
 
-.about-page {
-  padding-top: 100px;
+.about-page{
+  padding-top: clamp(90px, 10vw, 140px);
+}
+
+.projects-page {
+  padding-top: clamp(70px, 9vw, 90px);
 }
 
 .about-gallery {
   width: 100%;
   max-width: 1000px;
+  opacity: 0;
+}
+
+@keyframes about-gallery-animation {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.90;
+    transform: scale(1);
+  }
+}
+
+.about-gallery.in-view, .nc-projects-item.in-view, .personal-projects-item.in-view {
+  animation:  about-gallery-animation .7s ease-in-out forwards;
 }
 
 .projects, .nc-projects, .personal-projects {
   gap: 60px;
 }
 
-.nc-projects-slide, .personal-projects-item {
-  width: 90%;
+.nc-projects-item, .personal-projects-item {
   max-width: 800px;
-  border-radius: 15% 5% 10% 7%;
+  border-radius: 5% 20% 8% 15%;
   box-shadow: 0 0 15px 0 rgba(171, 63, 248, 0.309);
   transition: transform 0.25s ease-in-out;
   opacity: 0.6;
 }
 
-.nc-projects-slide:hover, .personal-projects-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 15px 0 rgba(171, 63, 248, 0.661);
-  opacity: 1;
+.nc-projects-item {
+  background-color: aliceblue;
+  color: #22211d;
+  font-family: 'CS Morcant', sans-serif;
+  padding: 1rem;
+  padding-left: clamp(1rem, 2vw, 2rem);
+}
+
+.about-gallery:hover, .nc-projects-item:hover, .personal-projects-item:hover {
+  background-color: rgb(244, 238, 250);
+}
+
+.nc-projects-header {
+  align-self: flex-start;
+  letter-spacing: 0.02em;
+  font-size: clamp(1rem, 2.4vw, 1.8rem);
+}
+
+.nc-projects-text {
+  padding: 0 7vw;
+  font-size: clamp(0.8rem, 1.7vw, 1.2rem);
+  line-height: clamp(0.8rem, 2.2vw, 1.2rem);
+  letter-spacing: 0.01em;
+}
+
+.nc-projects-footer {
+  align-self: flex-end;
+  font-size: clamp(1rem, 1.9vw, 1.4rem);
+  letter-spacing: 0.01em;
+  font-style: italic;
 }
 
 .personal-projects, .personal-projects-a, iframe, video {
@@ -166,13 +229,13 @@ iframe {
   width: 70%;
   opacity: 0.7;
   font-family: 'Echo Horizon', sans-serif;
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
 }
 
 #submit-btn {
   margin-top: 20px;
   padding: 10px;
-  background-color: rgb(128, 92, 162);
+  background-color: rgb(181, 138, 222);
   transition: transform 0.25s ease-in-out;
   border: none;
   border-radius: 3px;
@@ -216,11 +279,13 @@ iframe {
 }
 
 #form-contents {
-  padding: 5vw 2vw;
+  padding: 3vw 2vw;
   border: 2px solid rgb(166, 159, 172);
   border-radius: 3px;
 }
 
 .form-note {
   padding: 1vw 2vw;
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+  line-height: clamp(0.9rem, 1.7vw, 1.4rem);
 }
