@@ -208,7 +208,7 @@ iframe {
   animation-delay: 200ms;
 }
 
-.about-gallery:hover, .nc-projects-item:hover, .personal-projects-item:hover {
+.nc-projects-item:hover, .personal-projects-item:hover {
   outline: 5px groove rgba(88, 88, 201, 0.7);
 }
 
@@ -270,6 +270,7 @@ iframe {
 
 .form-main {
   height: 100vh;
+  min-height: 800px;
   align-items: center;
   justify-content: center;
   padding-bottom: 0;
@@ -279,7 +280,7 @@ iframe {
   width: 70%;
   opacity: 0.7;
   font-family: 'Echo Horizon', sans-serif;
-  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
 }
 
 #submit-btn {
@@ -298,7 +299,7 @@ iframe {
 }
 
 #landing-screen {
-  height: 100vh;
+  height: 100svh;
   justify-content: center;
 }
 
