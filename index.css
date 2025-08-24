@@ -188,6 +188,26 @@ iframe {
   padding-left: clamp(1rem, 2vw, 2rem);
 }
 
+.nc-projects-item:hover {
+  animation: about-gallery-animation .7s ease-in-out forwards;
+}
+
+.nc-projects-item:hover > .logo-top-left  {
+  animation: inherit;
+}
+.nc-projects-item:hover > .logo-bottom-left  {
+  animation: inherit;
+  animation-delay: 600ms;
+}
+.nc-projects-item:hover > .logo-bottom-right  {
+  animation: inherit;
+  animation-delay: 400ms;
+}
+.nc-projects-item:hover > .logo-top-right  {
+  animation: inherit;
+  animation-delay: 200ms;
+}
+
 .about-gallery:hover, .nc-projects-item:hover, .personal-projects-item:hover {
   outline: 5px groove rgba(88, 88, 201, 0.7);
 }
@@ -203,6 +223,7 @@ iframe {
   font-size: clamp(0.8rem, 1.7vw, 1.2rem);
   line-height: clamp(0.8rem, 2.2vw, 1.2rem);
   letter-spacing: 0.01em;
+  z-index: 10;
 }
 
 .nc-projects-footer {
@@ -210,6 +231,37 @@ iframe {
   font-size: clamp(1rem, 1.9vw, 1.4rem);
   letter-spacing: 0.01em;
   font-style: italic;
+}
+
+.nc-projects-logo {
+  position: absolute;
+  width: clamp(30px, 6.5vw, 90px);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.logo-top-left {
+  top: 20%;
+  left: 2%;
+  animation-delay: 2000ms;
+}
+
+.logo-bottom-left {
+  bottom: 15%;
+  left: 2%;
+  animation-delay: 8000ms;
+}
+
+.logo-bottom-right {
+  bottom: 20%;
+  right: 2%;
+  animation-delay: 6000ms;
+}
+
+.logo-top-right {
+  top: 15%;
+  right: 2%;
+  animation-delay: 4000ms;
 }
 
 .personal-projects, .personal-projects-a, iframe, video {
