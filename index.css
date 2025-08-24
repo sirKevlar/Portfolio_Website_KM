@@ -177,13 +177,11 @@ iframe {
 .nc-projects-item, .personal-projects-item {
   max-width: 800px;
   border-radius: 5% 20% 8% 15%;
-  box-shadow: 0 0 15px 0 rgba(171, 63, 248, 0.309);
   transition: transform 0.25s ease-in-out;
-  opacity: 0.6;
 }
 
 .nc-projects-item {
-  background-color: aliceblue;
+  background-image: url("assets/images/paperBackground.jpg");
   color: #22211d;
   font-family: 'CS Morcant', sans-serif;
   padding: 1rem;
@@ -191,7 +189,7 @@ iframe {
 }
 
 .about-gallery:hover, .nc-projects-item:hover, .personal-projects-item:hover {
-  background-color: rgb(244, 238, 250);
+  outline: 5px groove rgba(88, 88, 201, 0.7);
 }
 
 .nc-projects-header {
