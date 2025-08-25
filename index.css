@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Echo Horizon';
-  src: url('/fonts/EchoHorizon.ttf') format('truetype');
+  font-family: 'EchoHorizon';
+  src: url('assets/fonts/EchoHorizonModern-nADZg.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'CS Morcant';
-  src: url('/fonts/csmorcantmonodrawnregulardemo-7o7ml.otf') format('truetype');
+  font-family: 'CSMorcant';
+  src: url('assets/fonts/csmorcantmonodrawnregulardemo-7o7ml.otf') format('truetype');
 }
 
 html {
@@ -15,10 +15,9 @@ body {
   box-sizing: border-box;
   background: #22211d;
   color: #d2cccc;
-  min-width: 350px;
   max-width: 1000px;
   min-height: 570px;
-  font-family: 'Echo Horizon', sans-serif;
+  font-family: 'EchoHorizon', sans-serif;
   font-size: clamp(1.1rem, 3vw, 1.8rem);
   letter-spacing: 0.12em;
   line-height: 1.2em;
@@ -27,17 +26,19 @@ body {
 }
 main {
   width: 90%;
+  min-width: 320px;
   padding-bottom: 200px;
 }
 
 ul {
   list-style: none;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   padding-top: 20px;
   padding-bottom: 20px;
   justify-content: space-around;
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-size: clamp(2rem, 5vw, 2.5rem);
 }
 
 a {
@@ -183,7 +184,7 @@ iframe {
 .nc-projects-item {
   background-image: url("assets/images/paperBackground.jpg");
   color: #22211d;
-  font-family: 'CS Morcant', sans-serif;
+  font-family: 'CSMorcant', monospace;
   padding: 1rem;
   padding-left: clamp(1rem, 2vw, 2rem);
 }
@@ -279,7 +280,7 @@ iframe {
 .form-field, #submit-btn {
   width: 70%;
   opacity: 0.7;
-  font-family: 'Echo Horizon', sans-serif;
+  font-family: 'EchoHorizon', sans-serif;
   font-size: clamp(1.4rem, 3vw, 1.8rem);
 }
 
