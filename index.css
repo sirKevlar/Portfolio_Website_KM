@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Echo Horizon';
-  src: local('Echo Horizon'), url('./fonts/EchoHorizon.ttf') format('truetype');
+  src: local('Echo Horizon'), url('fonts/EchoHorizon.ttf') format('truetype');
 }
 @font-face {
   font-family: 'CS Morcant';
-  src: local('CS Morcant'), url('./fonts/csmorcantmonodrawnregulardemo-7o7ml.otf') format('truetype');
+  src: local('CS Morcant'), url('fonts/csmorcantmonodrawnregulardemo-7o7ml.otf') format('truetype');
 }
 
 html {
